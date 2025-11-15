@@ -389,7 +389,7 @@ npm run type-check
 npm run lint
 ```
 
-## 📖 文档
+## 文档
 
 ### ESP32 模块文档
 - [音频架构详解](Captain-Milo-ESP32/main/audio/README.md)

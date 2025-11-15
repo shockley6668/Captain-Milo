@@ -396,7 +396,7 @@ npm run type-check
 npm run lint
 ```
 
-## 📖 Documentation
+## Documentation
 
 ## Documentation
 
