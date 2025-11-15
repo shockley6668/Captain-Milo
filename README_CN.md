@@ -1,5 +1,7 @@
 # Captain Milo - 智能泰迪熊陪伴系统
 
+**项目网站**: https://captain-milo-ai-companion-for-kids-on-flights-118574819172.us-west1.run.app/
+
 [中文](#中文) | [English](README.md)
 
 ---
