@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { LoginPage } from './components/LoginPage';
-import { CrewDashboard } from './components/CrewDashboard';
-import { ParentDashboard } from './components/ParentDashboard';
+import { CrewDashboard } from './components/crew/CrewDashboard';
+import { ParentDashboard } from './components/parent/ParentDashboard';
 
 type ViewType = 'login' | 'crew' | 'parent';
 
@@ -13,21 +13,25 @@ export default function App() {
     setCurrentView(view);
   };
 
+  const handleLogout = () => {
+    setCurrentView('login');
+  };
+
   return (
-    <div className="min-h-screen bg-[#f5f7f7]">
+    <div className="min-h-screen bg-cathay-light-grey">
       {currentView === 'login' && (
         <LoginPage onSelectView={handleViewChange} />
       )}
       {currentView === 'crew' && (
         <CrewDashboard 
-          childName={childName} 
-          onBack={() => handleViewChange('login')} 
+          childName={childName}
+          onLogout={handleLogout}
         />
       )}
       {currentView === 'parent' && (
         <ParentDashboard 
-          childName={childName} 
-          onBack={() => handleViewChange('login')} 
+          childName={childName}
+          onLogout={handleLogout}
         />
       )}
     </div>
