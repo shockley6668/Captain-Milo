@@ -12,6 +12,8 @@
 
 > **Current Version Note**: The current demo is an **online cloud-based model inference version** with real-time cloud API integration. The offline model inference modules are RDK-Offline-ASR, RDK-Offline-LLM, and RDK-Offline-TTS.
 
+![Captain Milo System](docs/photo1.png)
+
 ## Key Features
 
 ### Intelligent Voice Interaction
