@@ -17,7 +17,7 @@
 
 ![Captain Milo Web系统](docs/photo2.png)
 ## 核心特性
-
+![Captain Milo Key Features](docs/photo3.png)
 ### 智能语音交互
 - **实时语音识别 (ASR)**：采用 SenseVoice 离线识别引擎，支持 25+ 语言
 - **语音活动检测 (VAD)**：集成 Silero VAD 进行精准的语音端点检测

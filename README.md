@@ -17,7 +17,7 @@
 
 ![Captain Milo Web System](docs/photo2.png)
 ## Key Features
-
+![Captain Milo Key Features](docs/photo3.png)
 ### Intelligent Voice Interaction
 - **Real-time Speech Recognition (ASR)**: SenseVoice offline engine with 25+ language support
 - **Voice Activity Detection (VAD)**: Silero VAD for precise speech endpoint detection
