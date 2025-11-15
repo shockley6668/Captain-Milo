@@ -8,12 +8,14 @@
 
 ## Project Overview
 
-**Captain Milo** is an intelligent teddy bear companion system developed by the **E094 Team at Cathay Hackathon**, specifically designed for unaccompanied minor passengers. Built on ESP32 and RDK platforms, it integrates ASR (Automatic Speech Recognition), LLM (Large Language Models), TTS (Text-to-Speech), IoT, and Web technologies to provide companionship, guidance, and safety protection for young travelers flying independently through voice interaction.
+**Captain Milo** is an intelligent teddy bear companion system developed by the **E094 Team at Cathay Hackathon**, specifically designed for unaccompanied minor passengers. Built on ESP32 and RDK platforms, it integrates ASR (Automatic Speech Recognition), LLM (Large Language Models), TTS (Text-to-Speech), IoT, and Web technologies to provide companionship, guidance, and safety protection for young travelers flying independently through voice interaction. It also features a web display interface for convenient UM child management and parent interaction experience.
 
 > **Current Version Note**: The current demo is an **online cloud-based model inference version** with real-time cloud API integration. The offline model inference modules are RDK-Offline-ASR, RDK-Offline-LLM, and RDK-Offline-TTS.
 
 ![Captain Milo System](docs/photo1.png)
 
+
+![Captain Milo Web System](docs/photo2.png)
 ## Key Features
 
 ### Intelligent Voice Interaction
