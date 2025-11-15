@@ -209,26 +209,35 @@ idf.py -p /dev/ttyUSB0 monitor
 
 #### 1. Build ASR Module
 ```bash
-cd RDK-Offline-ASR
-mkdir build && cd build
-cmake ..
-make -j$(nproc)
+sudo apt update
+sudo apt install -y tros-humble-hobot-audio
+colcon build --packages-select RDK-Offline-ASR
 ```
 
 #### 2. Build LLM Module
 ```bash
-cd RDK-Offline-LLM
-mkdir build && cd build
-cmake ..
-make -j$(nproc)
+# 拉取llama.cpp代码
+git clone https://github.com/ggml-org/llama.cpp -b b4749
+
+# 编译
+cmake -B build
+cmake --build build --config Release
+# 链接llama.cpp到工程目录下
+cd hobot_llamacpp && ln -s ../llama.cpp llama.cpp
+# src
+# ├── hobot_llamacpp                    # 本仓库
+# │   └── ../llama.cpp                  # 编译时需链接llama.cpp仓库
+# └── llama.cpp                         # llama.cpp仓库
+# RDK X5
+colcon build --merge-install --cmake-args -DPLATFORM_X5=ON --packages-select hobot_llamacpp
 ```
 
 #### 3. Build TTS Module
 ```bash
-cd RDK-Offline-TTS
-mkdir build && cd build
-cmake ..
-make -j$(nproc)
+wget http://archive.d-robotics.cc/tts-model/tts_model.tar.gz
+sudo tar -xf tts_model.tar.gz -C /opt/tros/${TROS_DISTRO}/lib/hobot_tts/
+conlon build --packages-select RDK-Offline-TTS
+
 ```
 
 #### 4. Launch with ROS2
