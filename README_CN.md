@@ -449,15 +449,6 @@ python scripts/release.py
 - **视觉反馈** - LED 情感表辿和互动  
 - **多传感器支持** - IMU、音频、环境传感器
 
-## 贡献指南
-
-欢迎贡献！请通过以下方式参与：
-
-1. Fork 此仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
 
 
 ## 团队

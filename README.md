@@ -467,15 +467,6 @@ ROS2 Integration - Inter-module communication via ROS2
 Visual Feedback - LED emotional expression and interaction  
 Multi-sensor Support - IMU, audio, environmental sensors  
 
-## Contributing
-
-We welcome contributions! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
